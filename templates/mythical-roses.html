@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythical Roses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(to right, #fef6fa, #fff0f5);
+            font-family: 'Georgia', serif;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin: 2rem 0;
+            color: #6a0dad;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        .rose-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(106, 13, 173, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .rose-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(106, 13, 173, 0.4);
+        }
+
+        .rose-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.85);
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            font-style: italic;
+            color: #6a0dad;
+            backdrop-filter: blur(4px);
+        }
+
+        a.btn:hover {
+            background-color: #6a0dad;
+            color: #fff;
+            box-shadow: 0 0 12px rgba(106, 13, 173, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="gallery-title">🌸 Mythical & Dreamlike Roses 🌸</h1>
+        <p class="text-center px-3 mb-5" style="font-style: italic; color: #5c1692; font-size: 1.1rem;">
+            These rare roses blossom not in earthly gardens, but within realms of wonder and legend. Each bloom whispers
+            a tale — of ancient spirits, cosmic wishes, and fiery rebirths. Step softly among the petals of imagination.
+        </p>
+
+        <p class="text-center px-3 mb-5" style="color: #7a2cbf; font-size: 1rem;">
+            Let each mythical rose transport you beyond time — to starlit realms and forgotten kingdoms, where emotions
+            take root in color and story. This collection is a tribute to beauty unbound by nature.
+        </p>
+
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://i.pinimg.com/originals/d1/e9/af/d1e9afe9a015f570245875be0a42abea.jpg"
+                    alt="Mirage Rose">
+                <div class="caption">Illusion & Longing</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://www.impecta.se/bilder/artiklar/8849.jpg" alt="Starlight Rose">
+                <div class="caption">Wishes & Cosmic Beauty</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://th.bing.com/th/id/OIP.JLRvXB7OJwprhLmfzUO0LwHaFs?rs=1&pid=ImgDetMain"
+                    alt="Phoenix Rose">
+                <div class="caption">Rebirth & Eternal Flame</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://th.bing.com/th/id/OIP.CMXPBsmSMDsL98c6bLxESQHaHa?rs=1&pid=ImgDetMain"
+                    alt="Moonlight Rose">
+                <div class="caption">Serenity & Dreams</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://vanstonenurseries.com/files/plant_photos/CS-ROSVAB.jpg" alt="Aurora Rose">
+                <div class="caption">Hope & Celestial Wonder</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rose-card">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4deb0f1a-cdef-444e-b194-c8d6b3f7e933/d16owzx-d687dc31-3e56-47f3-b642-fb0811f25e08.jpg/v1/fill/w_1096,h_729,q_70,strp/shadow__roses_by_citizenfresh_d16owzx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUyIiwicGF0aCI6IlwvZlwvNGRlYjBmMWEtY2RlZi00NDRlLWIxOTQtYzhkNmIzZjdlOTMzXC9kMTZvd3p4LWQ2ODdkYzMxLTNlNTYtNDdmMy1iNjQyLWZiMDgxMWYyNWUwOC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hcVO3gZbjvnZE41NOkh4vJ4Ad3lF-8AwoAuxVmtNoOs"
+                    alt="Shadow Rose">
+                <div class="caption">Mystery & Inner Strength</div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="home.html" class="btn btn-outline-danger btn-lg">← Return to Home</a>
+        </div>
+        <!-- Add more mythical roses here -->
+        `
+    </div>
+    </div>
+</body>
+
+</html>

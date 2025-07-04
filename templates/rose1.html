@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language of Roses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('rose-petals.png'); /* Optional background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+  z-index: -1;
+}
+
+.rose-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(193, 65, 83, 0.4);
+}
+.rose-card {
+  animation: fadeIn 1s ease-in;
+}
+
+.caption {
+  animation: shimmer 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.caption {
+  background: linear-gradient(90deg, rgba(255,255,255,0.8) 25%, rgba(255,240,245,0.9) 50%, rgba(255,255,255,0.8) 75%);
+  background-size: 400% 100%;
+}
+
+.caption {
+  backdrop-filter: blur(4px);
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+}
+
+    body {
+      background: linear-gradient(to right, #fff0f5, #ffe4e1);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .gallery-title {
+      text-align: center;
+      margin: 2rem 0;
+      color: #8b0000;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .rose-card {
+      position: relative;
+      overflow: hidden;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .rose-card:hover {
+      transform: scale(1.03);
+    }
+    .rose-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      color: #b22222;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .rose-card:hover .caption {
+      transform: translateY(0);
+    }
+    .rose-card {
+  animation: fadeIn 1s ease-in, pulseBorder 6s infinite;
+}
+
+@keyframes pulseBorder {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(193, 65, 83, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(193, 65, 83, 0.4);
+  }
+}
+
+.caption {
+  text-shadow: 1px 1px 2px rgba(255, 192, 203, 0.6);
+  letter-spacing: 1px;
+}
+.rose-card {
+  animation: fadeIn 1s ease-in, pulseBorder 6s infinite, bloom 8s ease-in-out infinite;
+}
+
+@keyframes bloom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+.caption {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #a52a2a;
+}
+.rose-card img {
+  height: 250px; /* or any fixed height you prefer */
+  object-fit: cover;
+  width: 100%;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="gallery-title">🌹 The Language of Roses 🌹</h1>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="rose-card">
+          <img src="https://cdn.wallpapersafari.com/8/48/tNoJ6k.jpg" alt="Red Rose">
+          <div class="caption">Love & Passion</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rose-card">
+          <img src="https://img.freepik.com/premium-photo/realistic-white-roses-black-background_605642-353.jpg" alt="White Rose">
+          <div class="caption">Purity & Innocence</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rose-card">
+          <img src="https://th.bing.com/th/id/OIP.PqS_btgw6D6waag6IpxBYgHaEK?w=711&h=400&rs=1&pid=ImgDetMain" alt="Black Rose">
+          <div class="caption">Mystery & Farewell</div>
+        </div>
+      </div>
+      <div class="row g-4 mt-4">
+  <div class="col-md-4">
+    <div class="rose-card">
+      <img src="https://images.pexels.com/photos/8936185/pexels-photo-8936185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Yellow Rose">
+      <div class="caption">Friendship & Joy</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="rose-card">
+      <img src="https://cdn.wallpapersafari.com/83/81/g0DUzO.jpg" class="card-img-top" alt="Lavender Rose">
+      <div class="caption">Enchantment & Love at First Sight</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="rose-card">
+      <img src="https://media.istockphoto.com/photos/bunch-of-blue-roses-picture-id180759760?k=6&m=180759760&s=612x612&w=0&h=60mNMhBEifgHc-I_N5XRit_tU3hYubTT4DEUP3SucoM=" alt="Blue Rose">
+      <div class="caption">Mystery & Unattainable</div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://s2.best-wallpaper.net/wallpaper/1920x1080/1809/Three-orange-roses-black-background_1920x1080.jpg" alt="Orange Rose">
+    <div class="caption">Desire & Enthusiasm</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://images.fineartamerica.com/images-medium-large-5/peach-rose-black-background-paul-w-sharpe-aka-wizard-of-wonders.jpg" alt="Peach Rose">
+    <div class="caption">Gratitude & Modesty</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://th.bing.com/th/id/R.d095d3fa639565beb081eabe5f6ba1bf?rik=W66r1%2bI73KC54A&riu=http%3a%2f%2f3.bp.blogspot.com%2f-HohSfwJJvNc%2fTg30eX9YPKI%2fAAAAAAAABCk%2fTiDt393A1NA%2fs1600%2fsingle_green_rose.jpg&ehk=FZl38RdLsxyzM1GRRDEliAU%2fHWz95ngB6r0OzUvp3K4%3d&risl=&pid=ImgRaw&r=0" alt="Green Rose">
+    <div class="caption">Harmony & Growth</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://img.freepik.com/premium-photo/pink-roses-black-background_1050153-16794.jpg" alt="Pink Rose">
+    <div class="caption">Grace & Admiration</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://img.freepik.com/premium-photo/cream-rose-isolated-black_392895-62341.jpg" alt="Cream Rose">
+    <div class="caption">Charm & Thoughtfulness</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://wallpaperaccess.com/full/4890368.jpg" class="card-img-top" alt="Burgundy Rose">
+    <div class="caption">Unconscious Beauty</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://static.vecteezy.com/system/resources/previews/036/610/381/non_2x/natural-background-with-flowers-free-photo.jpg"alt="Coral Rose">
+    <div class="caption">Desire & Fascination</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://i.pinimg.com/736x/8e/5c/ab/8e5cab5480c84b6c519e66bbfdee0658--white-roses-pink-roses.jpg" alt="Salmon Rose">
+    <div class="caption">Excitement & Enthusiasm</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="rose-card">
+    <img src="https://img.freepik.com/premium-photo/beautiful-multicolored-rose-black-background-closeup_934652-25339.jpg" alt="Multicolor Rose">
+    <div class="caption">Unity & Whimsy</div>
+  </div>
+</div>
+<div class="text-center mt-5">
+  <a href="home.html" class="btn btn-outline-danger btn-lg">← Return to Home</a>
+</div>
+
+
+
+    </div>
+  </div>
+</body>
+</html>
